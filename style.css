@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --background-color: #f7ede8;
+  --subtitle-color: #4d4d4d;
+  --colorful-text: #cd4631;
+  --bluish-color: #81adc8;
+  --alice-blue-color: #edf3f7;
+  --black-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  /* outline: 1px solid red; */
+}
+.navbar {
+  background-color: var(--background-color);
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  z-index: 999;
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--black-color);
+  display: inline-block;
+}
+.navbar .nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -300px;
+}
+.navbar .nav-links li {
+  list-style: none;
+  margin: 0 1rem;
+}
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: 1.3rem;
+  font-weight: bolder;
+  transition: all 0.3s ease;
+}
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .nav-links li a:hover {
+  color: var(--colorful-text);
+}
+.navbar .nav-links li a.active {
+  color: var(--colorful-text);
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-btn {
+  width: 180px;
+  height: 45px;
+  background-color: transparent;
+  border: 2px solid var(--black-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.second-btn {
+  width: 150px;
+  height: 45px;
+  background-color: var(--black-color);
+  color: var(--alice-blue-color);
+  border: 2px solid var(--black-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.first-btn:hover {
+  background-color: var(--colorful-text);
+  color: var(--alice-blue-color);
+  border: 2px solid var(--colorful-text);
+  transform: translateX(-5px);
+}
+.second-btn:hover {
+  background-color: var(--colorful-text);
+  color: var(--black-color);
+  border-color: transparent;
+  transform: translateX(5px);
+}
+.bar {
+  display: none;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  margin-top: -55px;
+}
+.middle {
+  /* margin-left: -80px; */
+  text-align: center;
+}
+.middle h1 {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: var(--black-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.colorful-text {
+  color: var(--colorful-text);
+}
+.middle h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--subtitle-color);
+  margin-bottom: 3rem;
+}
+.right {
+  margin-right: 80px;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -60px;
+    overflow: hidden;
+    background-color: var(--background-color);
+}
+.images img{
+    width: 300px;
+    height: 300px;
+    transition: all 0.3s ease;
+    margin-right: 20px;
+}
+.images img:hover{
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    /* outline: 1px solid red; */
+  }
+  body {
+    overflow: hidden;
+  }
+  .navbar .nav-links {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+  .logo {
+    font-size: 1.2rem;
+    margin-left: -55px;
+  }
+  .bar {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--black-color);
+    cursor: pointer;
+    margin-right: -55px;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .bar:hover {
+    transform: rotate(360deg);
+  }
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -55px;
+  }
+  .left {
+    display: none;
+  }
+  .middle {
+    margin-left: 0;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .middle h1 {
+    font-size: 3rem;
+  }
+  .middle h3 {
+    font-size: 1rem;
+  }
+  .second-btn {
+    width: 100px;
+    height: 35px;
+    font-size: 0.8rem;
+  }
+  .right {
+    display: none;
+  }
+}
